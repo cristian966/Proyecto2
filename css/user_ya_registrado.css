@@ -1,0 +1,47 @@
+.tabla {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+td {
+    border-bottom: solid black 2px;
+    background-color: #f39189;
+}
+
+.td2 {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+input[type=submit] {
+    font-size: 16px;
+    background-color: #f3f3f3;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    height: 40px;
+    width: 200px;
+    border: solid;
+}
+
+a {
+    color: #f39189;
+    text-decoration: none;
+    border-bottom: solid black 3px;
+}
+
+body {
+    background-color: #046582;
+}
