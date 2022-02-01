@@ -28,22 +28,23 @@
     justify-content: center;
     align-items: center;
     /* border: blueviolet solid 1px; */
-    background-color: #f05945;
+    background-color: black;
     border-radius: 10px;
 }
 
 .titulo1 {
     /* border: blueviolet solid 1px; */
-    background-color: #f7f3e9;
-    border-radius: 10px;
+    background-color: #F2FFE9;
+    border-radius: 5px;
 }
 
 .contenedor2 {
     /* border: springgreen solid 1px; */
     display: grid;
     grid-template-columns: repeat(2, auto);
-    background-color: #ffb26b;
+    background-color: #1572A1;
     border-radius: 10px;
+    width: 1200px;
 }
 
 .imagen {
@@ -67,5 +68,9 @@
 /*Fondo de index no repite y cubre todo centrado*/
 
 .fondo {
-    background-color: #feddbe;
+    background-color: #1A1A40;
+}
+
+a{
+    color:#FDEBF7;
 }

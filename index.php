@@ -42,7 +42,7 @@ include_once "php/conexion.php";
         }else {
             echo "<a href='login/login.php'><h3>Iniciar sesión / Registrarse</h3></a>";
         }
-        $query=mysqli_query($conn,"Select * from usuario where nombre_usuario = 'admin' and contraseña = 'admin'");
+       /* $query=mysqli_query($conn,"Select * from usuario where nombre_usuario = 'admin' and contraseña = 'admin'");
         // echo strval($query->fetch_row());
         $result = $query->fetch_row();
         echo strval($result[0]);
@@ -55,7 +55,7 @@ include_once "php/conexion.php";
         for ($i=0; $i < 20 ; $i++) { 
             
             echo "<h1>$columna1</h1>";
-        }
+        }*/
         
     ?>
         
@@ -64,17 +64,13 @@ include_once "php/conexion.php";
     <br><br>
     <div class="divPadre">
 
+    <a href="http://www.google.es">IR A SAN GOOGLE</a>
+
         <div class="contenedor1">
             <div class="titulo">
-                <h1 class="titulo1">Utimas noticias</h1>
+                <h1 class="titulo1">Utima Noticia</h1>
             </div>
             <!-- Agregar noticias en los divs -->
-            <div class="contenedor2">
-                <img src="img/fondoIndex.jpg" alt="imagen noticia 1" class="imagen">
-                <div class="divcentrado">
-                    <a href=""><h1>Titulo de la noticia que funcionara como enlace</h1></a>
-                </div>
-            </div>
             <br>
             <div class="contenedor2">
                 <img src="img/callofduty.png" alt="imagen noticia 2" class="imagen">
@@ -86,35 +82,23 @@ include_once "php/conexion.php";
 <br>
         <div class="contenedor1">
             <div class="titulo">
-                <h1 class="titulo1">Utimos Juegos</h1>
+                <h1 class="titulo1">Utimo Juego</h1>
             </div>
             <!-- Agregar juegos en los divs -->
+            <br>
             <div class="contenedor2">
                 <img src="img/fondoIndex.jpg" alt="imagen juego 1" class="imagen">
                 <div class="divcentrado">
                     <a href=""><h1>Titulo del juego que funcionara como enlace</h1></a>
                 </div>
             </div>
-            <br>
-            <div class="contenedor2">
-                <img src="img/callofduty.png" alt="imagen noticia 2" class="imagen">
-                <div class="divcentrado">
-                    <a href=""><h1>Call of Duty tendra un nuevo juego este año basado en el futuro espaciales con combate de naves</h1></a>
-                </div>
-            </div>
         </div>
 <br>
         <div class="contenedor1">
             <div class="titulo">
-                <h1 class="titulo1">Utimos reviews</h1>
+                <h1 class="titulo1">Utimo Review</h1>
             </div>
             <!-- Agregar juegos en los divs -->
-            <div class="contenedor2">
-                <img src="img/fondoIndex.jpg" alt="imagen review 1" class="imagen">
-                <div class="divcentrado">
-                    <a href=""><h1>Titulo del review que funcionara como enlace</h1></a>
-                </div>
-            </div>
             <br>
             <div class="contenedor2">
                 <img src="img/callofduty.png" alt="imagen reviw 2" class="imagen">
@@ -126,15 +110,9 @@ include_once "php/conexion.php";
 <br>
         <div class="contenedor1">
             <div class="titulo">
-                <h1 class="titulo1">Utimas guías</h1>
+                <h1 class="titulo1">Utima guía</h1>
             </div>
             <!-- Agregar juegos en los divs -->
-            <div class="contenedor2">
-                <img src="img/fondoIndex.jpg" alt="imagen guia 1" class="imagen">
-                <div class="divcentrado">
-                    <a href=""><h1>Titulo de la guia que funcionara como enlace</h1></a>
-                </div>
-            </div>
             <br>
             <div class="contenedor2">
                 <img src="img/callofduty.png" alt="imagen guia 2" class="imagen">
@@ -144,25 +122,6 @@ include_once "php/conexion.php";
             </div>
         </div>
 <br>
-        <div class="contenedor1">
-            <div class="titulo">
-                <h1 class="titulo1">Utimos post del foro</h1>
-            </div>
-            <!-- Agregar juegos en los divs -->
-            <div class="contenedor2">
-                <img src="img/fondoIndex.jpg" alt="imagen foro 1" class="imagen">
-                <div class="divcentrado">
-                    <a href=""><h1>Titulo del post del foro que funcionara como enlace</h1></a>
-                </div>
-            </div>
-            <br>
-            <div class="contenedor2">
-                <img src="img/callofduty.png" alt="imagen foro 2" class="imagen">
-                <div class="divcentrado">
-                    <a href=""><h1>Call of Duty tendra un nuevo juego este año basado en el futuro espaciales con combate de naves</h1></a>
-                </div>
-            </div>
-        </div>
        
     </div>
         
