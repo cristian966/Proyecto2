@@ -36,11 +36,11 @@
     <?php
 
 include_once "php/conexion.php";
-        // session_start(); sesion ya inizada arriba para que no se ve el foro en caso de no estar registrado
+        // session_start(); sesion ya inizada arriba para que no se vea el foro en caso de no estar registrado
         if (isset($_SESSION['nombredelusuario'])) {
-            echo " <a href='usuarios/registrado/registrado.php'><h3>Perfil del usuario</h3></a> <br>";
+            echo " <a href='usuarios/registrado/registrado.php' class='enlacesIniSesion'><h3>Perfil del usuario</h3></a> <br>";
         }else {
-            echo "<a href='login/login.php'><h3>Iniciar sesión / Registrarse</h3></a>";
+            echo "<a href='login/login.php' class='enlacesIniSesion'><h3>Iniciar sesión / Registrarse</h3></a>";
         }
        /* $query=mysqli_query($conn,"Select * from usuario where nombre_usuario = 'admin' and contraseña = 'admin'");
         // echo strval($query->fetch_row());
@@ -63,9 +63,6 @@ include_once "php/conexion.php";
 
     <br><br>
     <div class="divPadre">
-
-    <a href="http://www.google.es">IR A SAN GOOGLE</a>
-
         <div class="contenedor1">
             <div class="titulo">
                 <h1 class="titulo1">Utima Noticia</h1>
@@ -75,7 +72,7 @@ include_once "php/conexion.php";
             <div class="contenedor2">
                 <img src="img/callofduty.png" alt="imagen noticia 2" class="imagen">
                 <div class="divcentrado">
-                    <a href=""><h1>Call of Duty tendra un nuevo juego este año basado en el futuro espaciales con combate de naves</h1></a>
+                    <a href="" class="enlaces"><h1>Call of Duty tendra un nuevo juego este año basado en el futuro espaciales con combate de naves</h1></a>
                 </div>
             </div>
         </div>
@@ -89,7 +86,7 @@ include_once "php/conexion.php";
             <div class="contenedor2">
                 <img src="img/fondoIndex.jpg" alt="imagen juego 1" class="imagen">
                 <div class="divcentrado">
-                    <a href=""><h1>Titulo del juego que funcionara como enlace</h1></a>
+                    <a href="" class="enlaces"><h1>Titulo del juego que funcionara como enlace</h1></a>
                 </div>
             </div>
         </div>
@@ -103,7 +100,7 @@ include_once "php/conexion.php";
             <div class="contenedor2">
                 <img src="img/callofduty.png" alt="imagen reviw 2" class="imagen">
                 <div class="divcentrado">
-                    <a href=""><h1>Call of Duty tendra un nuevo juego este año basado en el futuro espaciales con combate de naves</h1></a>
+                    <a href="" class="enlaces"><h1>Call of Duty tendra un nuevo juego este año basado en el futuro espaciales con combate de naves</h1></a>
                 </div>
             </div>
         </div>
@@ -117,7 +114,7 @@ include_once "php/conexion.php";
             <div class="contenedor2">
                 <img src="img/callofduty.png" alt="imagen guia 2" class="imagen">
                 <div class="divcentrado">
-                    <a href=""><h1>Call of Duty tendra un nuevo juego este año basado en el futuro espaciales con combate de naves</h1></a>
+                    <a href="" class="enlaces"><h1>Call of Duty tendra un nuevo juego este año basado en el futuro espaciales con combate de naves</h1></a>
                 </div>
             </div>
         </div>

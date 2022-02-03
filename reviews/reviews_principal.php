@@ -36,9 +36,9 @@
     <?php
         // session_start();
         if (isset($_SESSION['nombredelusuario'])) {
-            echo " <a href='../usuarios/registrado/registrado.php'><h3>Perfil del usuario</h3></a> <br>";
+            echo " <a href='../usuarios/registrado/registrado.php' class='enlacesIniSesion'><h3>Perfil del usuario</h3></a> <br>";
         }else {
-            echo "<a href='../login/login.php'><h3>Iniciar sesión / Registrarse</h3></a>";
+            echo "<a href='../login/login.php' class='enlacesIniSesion'><h3>Iniciar sesión / Registrarse</h3></a>";
         }
     ?>
         
@@ -63,7 +63,7 @@
             <div class="contenedor2">
                 <img src="../img/fondoIndex.jpg" alt="imagen review 1" class="imagen">
                 <div class="divcentrado">
-                    <a href=""><h1>Titulo de la review que funcionara como enlace a la pagina (plantilla que cargara los datos de la review)</h1></a>
+                    <a href="" class="enlaces"><h1>Titulo de la review que funcionara como enlace a la pagina (plantilla que cargara los datos de la review)</h1></a>
                 </div>
             </div>
             <br>

@@ -13,9 +13,9 @@
     <?php
         session_start();
         if (isset($_SESSION['nombredelusuario'])) {
-            echo " <a href='../../usuarios/registrado/registrado.php'><h3>Perfil del usuario</h3></a> <br>";
+            echo " <a href='../../usuarios/registrado/registrado.php' class='enlacesIniSesion'><h3>Perfil del usuario</h3></a> <br>";
         }else {
-            echo "<a href='../../login/login.php'><h3>Iniciar sesión / Registrarse</h3></a>";
+            echo "<a href='../../login/login.php' class='enlacesIniSesion'><h3>Iniciar sesión / Registrarse</h3></a>";
         }
     ?>
         
