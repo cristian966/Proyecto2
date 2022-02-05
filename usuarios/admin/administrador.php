@@ -18,8 +18,6 @@ if(isset($_POST['btncerrar']))
 }
 include_once "../../php/conexion.php";
 
-
-
 ?>
 
 <!DOCTYPE html>
@@ -35,31 +33,36 @@ include_once "../../php/conexion.php";
 <h1>Datos del Usuario</h1>
 
 <table class="tabla">
-<th>Información de la cuenta</th>
     <tr>
-        <td>Nombre de usuario: </td>
-        <td class="td2"> <?php echo "$usuarioingresado";?></td>  
+        <th>Id Ususario</th>   
+        <th>Nombre</th>   
+        <th>Contraseña</th>   
+        <th>Email</th>   
+        <th>Id Rol</th>   
     </tr>
+
+    <?php
+        $queryusuarios = mysqli_query($conn, "SELECT * FROM usuario where nombre_usuario like '".$usuarioingresado."'");
+        while($mostrar = mysqli_fetch_array($queryusuarios)){
+                
+    ?>
     <tr>
-        <td>Email: </td>
-        <td class="td2">Prueba</td>
+        <td><?php echo $mostrar['id_usuario'] ?></td>
+        <td><?php echo $mostrar['nombre_usuario'] ?></td>
+        <td><?php echo $mostrar['contraseña'] ?></td>
+        <td><?php echo $mostrar['email'] ?></td>
+        <td><?php echo $mostrar['id_rol'] ?></td>
     </tr>
-    <tr>
-        <td>Contraseña: </td>
-        <td class="td2">prueba de texto</td>
-    </tr>
-    <tr>
-    <td>Rol: </td>
-        <td class="td2">administrador</td>
-    </tr>
-    <tr>
-    
-    </tr>
+    <?php
+                }
+    ?>
 </table>
 
+
 <h3><a href="../../index.php">Volver a la página principal</a></h3>
-<h3><a href="./editarusuarios/panelusuarios.php">Control de usuarios</a></h3>
+<h3><a href="./editarusuarios/panelusuarios.php">Control de Usuarios</a></h3>
 <h3><a href="./editarjuegos/paneljuegos.php">Panel de juegos</a></h3>
+<h3><a href="./editarnoticias/panelnoticias.php">Panel de Noticias</a></h3>
 <form method="POST">
 <input type="submit" value="Cerrar sesión" name="btncerrar" />
 </form>
