@@ -63,6 +63,8 @@ include_once "../../php/conexion.php";
 <h3><a href="./editarusuarios/panelusuarios.php">Control de Usuarios</a></h3>
 <h3><a href="./editarjuegos/paneljuegos.php">Panel de juegos</a></h3>
 <h3><a href="./editarnoticias/panelnoticias.php">Panel de Noticias</a></h3>
+<h3><a href="./editarreview/panelreview.php">Panel de Reviews</a></h3>
+<h3><a href="./editarguias/panelguias.php">Panel de Guias</a></h3>
 <form method="POST">
 <input type="submit" value="Cerrar sesión" name="btncerrar" />
 </form>

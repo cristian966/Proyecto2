@@ -72,7 +72,7 @@ function cancelarform() {
 
 </script>
 <div class="caja_popup" id="formregistrar">
-  <form action="./controlnoticas/agregar.php" class="contenedor_popup" method="POST">
+  <form action="./controlnoticias/agregar.php" class="contenedor_popup" method="POST">
         <table>
 		<tr><th colspan="2">Nueva Noticia</th></tr>
             <tr> 

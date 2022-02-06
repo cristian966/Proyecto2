@@ -17,7 +17,7 @@ while($mostrar = mysqli_fetch_array($querybuscar))
 ?>
 <html>
 <head>    
-		<title>Editar usuarios</title>
+		<title>Editar juego</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="../../../../css/estilospanelusuario.css">
 </head>
@@ -25,7 +25,7 @@ while($mostrar = mysqli_fetch_array($querybuscar))
 <div class="caja_popup2" id="formmodificar">
   <form method="POST" class="contenedor_popup" >
         <table>
-		<tr><th colspan="2">Modificar usuario</th></tr>
+		<tr><th colspan="2">Modificar juego</th></tr>
 		     <tr> 
                 <td>ID juego</td>
                 <td><input type="text" name="txtcodigo" value="<?php echo $codigo;?>" required ></td>

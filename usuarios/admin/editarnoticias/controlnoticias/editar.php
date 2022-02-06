@@ -30,15 +30,15 @@ while($mostrar = mysqli_fetch_array($querybuscar))
                 <td><input type="text" name="txtcodigo" value="<?php echo $codigo;?>" required ></td>
             </tr>
             <tr> 
-                <td>titulo</td>
+                <td>Titulo</td>
                 <td><input type="text" name="txttitulo" value="<?php echo $titulo;?>" required></td>
             </tr>
             <tr> 
-                <td>texto noticia</td>
+                <td>Texto noticia</td>
                 <td><input type="textarea" name="txtnoticia" value="<?php echo $texto_noticia;?>" required></td>
             </tr>
             <tr> 
-                <td>id juego</td>
+                <td>Id juego</td>
                 <td><input type="text" name="idjuego" value="<?php echo $id_juego;?>"required></td>
             </tr>
             <tr>

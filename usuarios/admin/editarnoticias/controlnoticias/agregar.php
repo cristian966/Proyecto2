@@ -2,11 +2,11 @@
     
     $titulo = $_POST['txttitulo'];
     $texto = $_POST['txtnoticia'];
-    $id_juego = $_POST['idjuego'];
+    $idjuego = $_POST['idjuego'];
       
-	mysqli_query($conn, "INSERT INTO noticia(titulo,texto_noticia,id_juego) VALUES('$titulo','$texto','$id_juego')");
+	mysqli_query($conn, "INSERT INTO noticia(titulo,texto_noticia,id_juego) VALUES('$titulo','$texto','$idjuego')");
     
-header("Location: ../panelnoticias.php");
+    header("Location: ../panelnoticias.php");
 	
 
 ?>
