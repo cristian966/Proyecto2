@@ -76,8 +76,7 @@ $queryusuarios = mysqli_query($conn, "SELECT nombre_categoria FROM categorias OR
         while($mostrar = mysqli_fetch_array($queryusuarios)) 
 		{    $numerofila++;    
             echo "<tr>";
-            echo "<td>".$mostrar['nombre_categoria']."</td>"; 
-                   
+            echo "<td>".$mostrar['nombre_categoria']."</td>";  
 }
         ?>
     </table>
